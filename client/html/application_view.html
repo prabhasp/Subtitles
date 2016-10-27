@@ -21,20 +21,18 @@
 <template name='map'>
   <div class='timeline-wrapper'>
     {{#if videoDuration}}
-      {{#constant}}
-      <svg id='video-map' width='100%' height='60'>    
+      <svg id='video-map' width='100%' height='60'>
         <g class='map-wrap' transform = 'translate(0,60)'>
             <rect class='timeline-click-zone' y='-60' height='60'></rect>
             <g id='caption-spans' class='caption-spans'></g>
             <line id='current-position' y1='0' y2='-60'></line>
         </g>
       </svg>
-      {{/constant}}
     {{/if}}
 </div>
 </template>
 
-<!-- VIDEO --> 
+<!-- VIDEO -->
 <template name="video">
   <div class='row-fluid'>
     <div class='span12'>
@@ -54,7 +52,7 @@
 <template name='mainPlayerView'>
   {{#if error}}
     <div id='main-player-drop' class='dropzone'>
-      <p> 
+      <p>
         <strong>Drop video</strong> or <strong> Click </strong> to select video source.
       </p>
     </div>
