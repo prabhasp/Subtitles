@@ -92,7 +92,7 @@ Template.captions.destroyed = function() {
   $(window).off('resize');
 };
 
-Template.captions.preserve(['#captions']);
+//Template.captions.preserve(['#captions']);
 
 // Helper to set cursor at the end of a textarea's content
 function moveCaretToEnd(el) {
@@ -103,7 +103,7 @@ function moveCaretToEnd(el) {
   $el.unbind();
 }
 
-Template.captions.preserve(['.captions']);
+//Template.captions.preserve(['.captions']);
 
 Template.captions.events({
 
@@ -477,6 +477,6 @@ Template.saving.helpers({
   }
 });
 
-Template.captions.preserve({
+/*Template.captions.preserve({
   'textarea[id]' : function (node) { return node.id; }
-});
+});*/

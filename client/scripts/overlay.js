@@ -37,10 +37,10 @@ Template.overlay.events({
     Meteor.setTimeout(function(){
       Session.set('overlay', null);
     }, 400);
-    
-    return false; 
+
+    return false;
   },
 
 });
 
-Template.overlay.preserve['#panel'];
+//Template.overlay.preserve['#panel'];
