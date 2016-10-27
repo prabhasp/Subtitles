@@ -24,11 +24,10 @@
     {{> overlay}}
     {{> navigation}}
     {{> body}}
-  </div>
 </body>
 
 
-<template name='body'>
+<template name='view'>
   <div id='content'>
     {{#unless appView}}
       <div class='intro'>
@@ -47,7 +46,7 @@
         {{> help}}
       </div>
     {{/if}}
-    
+
   </div>
 </template>
 
