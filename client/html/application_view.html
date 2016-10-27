@@ -68,9 +68,9 @@
     <div class='span4 controls'>
 
       <fieldset>
-        <input type='checkbox' id='loop-checked' {{#if looping}} checked = 'checked' {{/if}}>
+        <input type='checkbox' id='loop-checked' checked = 'checked' >
         <span>Loop</span>
-        <select id='loop-duration' {{#unless looping}} disabled {{/unless}}>
+        <select id='loop-duration' >
           <option value='1'> 1s </option>
           <option value='2'> 2s </option>
           <option value='3'> 3s </option>
@@ -95,7 +95,7 @@
   <div class='span4 controls'>
       <fieldset>
         <span>Rate </span>
-        <select id='playback-rate' {{#unless supported}} disabled {{/unless}}>
+        <select id='playback-rate' >
           <option value='1.5'> 1.5x </option>
           <option value='1.4'> 1.4x </option>
           <option value='1.3'> 1.3x </option>
